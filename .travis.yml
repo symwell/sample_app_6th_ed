@@ -17,6 +17,9 @@ before_install:
   - sudo apt-get -y install graphviz
   - nvm install 14.18.1
   - npm install -g yarn@1.22.10
+  # installing yarn 1.22.10 installed 3.2.1! After the installation,
+  # pin yarn to a specific version.
+  - yarn set version 1.22.10
   - yarn install
 
 install:
